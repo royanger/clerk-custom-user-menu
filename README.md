@@ -31,9 +31,9 @@ Clerk is a developer-first authentication and user management solution. It provi
 
 This sample repo has branches that match each of the posts. Please see [Running the sample application](#running-the-sample-application) for more information. 
 
-## This rep is not actively maintained!
+## This repository is not actively maintained!
 
-This repo and the example application may get updated for bug fixes, but its likely to remain unmaintained. The following versions of key packages were used when developing the blog posts and the repo:
+This repo and the example application may get updated for bug fixes, but it is likely to remain unmaintained. The following versions of key packages were used when developing the blog posts and the repo:
 
 | Version | Package |
 | ------- | ------- |
