@@ -29,6 +29,30 @@
 
 Clerk is a developer-first authentication and user management solution. It provides pre-built React components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be dropped into any React or Next.js application.
 
+This sample repo has branches that match each of the posts. If you are new to working with remote branches, the following will give you access to all brnaches:
+
+```bash
+git clone git@github.com:royanger/clerk-custom-user-menu.git
+cd clerk-custom-user-menu
+git fetch --all
+```
+You can now use the following to checkout the branch related to the post you are folling:
+
+```bash
+// Part 
+git checkout custom-user-button-part-1
+```
+
+## This rep is not actively maintained!
+
+This repo and the example application may get updated for bug fixes, but its likely to remain unmaintained. The following versions of key packages were used when developing the blog posts and the repo:
+
+| Version | Package |
+| ------- | ------- |
+| 4.27.2 | @clerk/nextjs |
+| 2.0.6 | @radix-ui/react-dropdown-menu |
+| 0.7.0 |class-variance-authority |
+| 2.0.18 |@heroicons/react |
 
 
 ## Deploy
