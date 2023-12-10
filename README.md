@@ -29,19 +29,7 @@
 
 Clerk is a developer-first authentication and user management solution. It provides pre-built React components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be dropped into any React or Next.js application.
 
-This sample repo has branches that match each of the posts. If you are new to working with remote branches, the following will give you access to all brnaches:
-
-```bash
-git clone git@github.com:royanger/clerk-custom-user-menu.git
-cd clerk-custom-user-menu
-git fetch --all
-```
-You can now use the following to checkout the branch related to the post you are folling:
-
-```bash
-// Part 
-git checkout custom-user-button-part-1
-```
+This sample repo has branches that match each of the posts. Please see [Running the sample application](#running-the-sample-application) for more information. 
 
 ## This rep is not actively maintained!
 
@@ -63,8 +51,18 @@ Easily deploy the example application to Vercel with the button below. You will 
 
 ## Running the sample application
 
+This application has branches that match the parts of the blog post. You will want to checkout the branch that matches the post you are currently reading. If you are new to working with remote branches, the following will give you access to all branches:
+
 ```bash
-git clone https://github.com/clerkinc/clerk-nextjs-app-quickstart
+git clone git@github.com:royanger/clerk-custom-user-menu.git
+cd clerk-custom-user-menu
+git fetch --all
+```
+You can now use the following to checkout the branch related to the post you are folling:
+
+```bash
+// Part 1
+git checkout custom-user-button-part-1
 ```
 
 To run the example locally, you need to:
@@ -75,9 +73,9 @@ To run the example locally, you need to:
 
 3. Set the required Clerk environment variables as shown in [the example `env` file](./.env.local.example).
 
-4. `npm install` the required dependencies.
+4. `pnpm install` the required dependencies.
 
-5. `npm run dev` to launch the development server.
+5. `pnpm dev` to launch the development server.
 
 
 ## Learn more
