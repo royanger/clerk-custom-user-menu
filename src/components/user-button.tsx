@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -61,9 +60,7 @@ const button = cva(["flex", "flex-row", "items-center", "rounded-xl"], {
 
 interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-  VariantProps<typeof button> {
-  asChild?: boolean;
-}
+    VariantProps<typeof button> {}
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, size, children, className, ...props }, ref) => {

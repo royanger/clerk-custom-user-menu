@@ -13,9 +13,15 @@ export default function RootLayout({
         <body className="">
           <header className="bg-gray-800/70 p-4">
             <div className="container flex flex-row items-center">
-              <Image src="/light-logo.png" alt="Clerk Logo" height={64} width={64} />
-              <h1 className="text-1xl md:text-2xl font-bold">Custom User Button and Menu</h1>
-
+              <Image
+                src="/light-logo.png"
+                alt="Clerk Logo"
+                height={64}
+                width={64}
+              />
+              <h1 className="text-1xl font-bold md:text-2xl">
+                Custom User Button and Menu
+              </h1>
             </div>
           </header>
           {children}
