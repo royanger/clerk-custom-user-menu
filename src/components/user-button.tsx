@@ -44,7 +44,7 @@ export const UserButton = () => {
         <DropdownMenu.Content className="mt-4 w-52 rounded-xl border border-gray-200 bg-white px-6 py-4 text-black drop-shadow-2xl">
           <DropdownMenu.Label />
           <DropdownMenu.Group className="py-3">
-            <DropdownMenu.Item>
+            <DropdownMenu.Item asChild>
               {/* Create a button with an onClick to open the User Profile modal */}
               <button onClick={() => openUserProfile()} className="pb-3">
                 Profile
