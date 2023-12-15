@@ -29,40 +29,62 @@
 
 Clerk is a developer-first authentication and user management solution. It provides pre-built React components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be dropped into any React or Next.js application.
 
+This sample repo has branches that match each of the posts. Please see [Running the sample application](#running-the-sample-application) for more information.
 
+## This repository is not actively maintained!
+
+This repo and the example application may get updated for bug fixes, but it is likely to remain unmaintained. The following versions of key packages were used when developing the blog posts and the repo:
+
+| Version | Package                       |
+| ------- | ----------------------------- |
+| 4.27.2  | @clerk/nextjs                 |
+| 2.0.6   | @radix-ui/react-dropdown-menu |
+| 0.7.0   | class-variance-authority      |
+| 2.0.18  | @heroicons/react              |
 
 ## Deploy
 
 Easily deploy the example application to Vercel with the button below. You will need to set the required environment variables in the Vercel dashboard.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fclerkinc%2Fclerk-nextjs-app-quickstart&env=NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY&envDescription=Clerk%20API%20keys&envLink=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs&redirect-url=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Froyanger%2Fclerk-custom-user-menu&env=NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY&envDescription=Clerk%20API%20keys&envLink=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs&redirect-url=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs)
 
 ## Running the sample application
 
+This application has branches that match the parts of the blog post. You will want to checkout the branch that matches the post you are currently reading. If you are new to working with remote branches, the following will give you access to all branches:
+
 ```bash
-git clone https://github.com/clerkinc/clerk-nextjs-app-quickstart
+git clone git@github.com:royanger/clerk-custom-user-menu.git
+cd clerk-custom-user-menu
+git fetch --all
+```
+
+You can now use the following to checkout the branch related to the post you are folling:
+
+```bash
+// Part 1
+git checkout custom-user-button-part-1
 ```
 
 To run the example locally, you need to:
 
-1. Sign up for a Clerk account at [https://clerk.com](https://dashboard.clerk.com/sign-up?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-nextjs-app-quickstart).
+1. Sign up for a Clerk account at [https://clerk.com](https://dashboard.clerk.com).
 
-2. Go to the [Clerk dashboard](https://dashboard.clerk.com?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-nextjs-app-quickstart) and create an application.
+2. Go to the [Clerk dashboard](https://dashboard.clerk.com) and create an application.
 
 3. Set the required Clerk environment variables as shown in [the example `env` file](./.env.local.example).
 
-4. `npm install` the required dependencies.
+4. `pnpm install` the required dependencies.
 
-5. `npm run dev` to launch the development server.
-
+5. `pnpm dev` to launch the development server.
 
 ## Learn more
 
 To learn more about Clerk and Next.js, check out the following resources:
 
-- [Quickstart: Get started with Next.js and Clerk](https://clerk.com/docs/quickstarts/nextjs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-nextjs-app-quickstart)
+- [Quickstart: Get started with Next.js and Clerk](https://clerk.com/docs/quickstarts/nextjs)
 
-- [Clerk Documentation](https://clerk.com/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-nextjs-app-quickstart)
+- [Clerk Documentation](https://clerk.com/docs)
+
 - [Next.js Documentation](https://nextjs.org/docs)
 
 ## Found an issue?
