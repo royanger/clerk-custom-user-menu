@@ -25,7 +25,7 @@ export const UserButton = () => {
 
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger>
+      <DropdownMenu.Trigger asChild>
         {/* Render a button using the image and email from `user` */}
         <button className="flex flex-row rounded-xl border border-gray-200 bg-white px-4 py-3 text-black drop-shadow-md">
           <Image
@@ -50,7 +50,7 @@ export const UserButton = () => {
                 Profile
               </button>
             </DropdownMenu.Item>
-            <DropdownMenu.Item>
+            <DropdownMenu.Item asChild>
               {/* Create a fictional link to /subscriptions */}
               <Link href="/subscriptions" passHref className="py-3">
                 Subscription
@@ -58,7 +58,7 @@ export const UserButton = () => {
             </DropdownMenu.Item>
           </DropdownMenu.Group>
           <DropdownMenu.Separator className="my-1 h-px bg-gray-500" />
-          <DropdownMenu.Item>
+          <DropdownMenu.Item asChild>
             {/* Create a Sign Out button -- signOut() takes a call back where the user is redirected */}
             <button
               onClick={() => signOut(() => router.push("/"))}
