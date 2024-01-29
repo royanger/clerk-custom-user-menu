@@ -105,7 +105,7 @@ const UserButtonAndMenu = () => {
         <DropdownMenu.Content className="mt-4 w-52 rounded-xl border border-gray-200 bg-white px-2 py-2 text-black drop-shadow-2xl">
           <DropdownMenu.Label />
           <DropdownMenu.Group className="py-1">
-            <DropdownMenu.Item className="outline-none">
+            <DropdownMenu.Item className="outline-none" asChild>
               <Button
                 onClick={() => openUserProfile()}
                 className="pb-3"
@@ -126,7 +126,7 @@ const UserButtonAndMenu = () => {
             </DropdownMenu.Item>
           </DropdownMenu.Group>
           <DropdownMenu.Separator className="my-1 h-px bg-gray-200" />
-          <DropdownMenu.Item className="outline-none">
+          <DropdownMenu.Item asChild className="outline-none">
             <Button
               onClick={() => signOut(() => router.push("/"))}
               className="py-3"
