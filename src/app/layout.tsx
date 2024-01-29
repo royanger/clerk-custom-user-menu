@@ -1,4 +1,4 @@
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, SignInButton, SignedOut } from "@clerk/nextjs";
 import "./globals.css";
 import Image from "next/image";
 
@@ -19,9 +19,14 @@ export default function RootLayout({
                 height={64}
                 width={64}
               />
-              <h1 className="text-1xl font-bold md:text-2xl">
+              <h1 className="text-1xl font-bold md:text-2xl grow">
                 Custom User Button and Menu
               </h1>
+              <SignedOut>
+                <SignInButton>
+                  <button className="text-2xl">Sign In</button>
+                </SignInButton>
+              </SignedOut>
             </div>
           </header>
           {children}
