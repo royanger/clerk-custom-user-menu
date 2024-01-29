@@ -58,11 +58,15 @@ cd clerk-custom-user-menu
 git fetch --all
 ```
 
-You can now use the following to checkout the branch related to the post you are folling:
+You can now use the following to checkout the branch related to the post you are following:
 
 ```bash
 // Part 1
 git checkout custom-user-button-part-1
+
+// Part 2
+git checkout custom-user-button-part-2
+
 ```
 
 To run the example locally, you need to:
