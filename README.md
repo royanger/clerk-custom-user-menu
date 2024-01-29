@@ -37,10 +37,10 @@ This repo and the example application may get updated for bug fixes, but it is l
 
 | Version | Package                       |
 | ------- | ----------------------------- |
-| 4.27.2  | @clerk/nextjs                 |
+| 4.29.5  | @clerk/nextjs                 |
 | 2.0.6   | @radix-ui/react-dropdown-menu |
 | 0.7.0   | class-variance-authority      |
-| 2.0.18  | @heroicons/react              |
+| 2.1.1   | @heroicons/react              |
 
 ## Deploy
 
@@ -58,11 +58,14 @@ cd clerk-custom-user-menu
 git fetch --all
 ```
 
-You can now use the following to checkout the branch related to the post you are folling:
+You can now use the following to checkout the branch related to the post you are following:
 
 ```bash
 // Part 1
 git checkout custom-user-button-part-1
+
+// Part 2
+git checkout custom-user-button-part-2
 ```
 
 To run the example locally, you need to:
