@@ -9,7 +9,7 @@ import Link from "next/link";
 import {
   ArrowPathIcon,
   ArrowRightCircleIcon,
-  ArrowRightOnRectangleIcon,
+  ArrowRightEndOnRectangleIcon,
   CurrencyDollarIcon,
   UserIcon,
 } from "@heroicons/react/24/solid";
@@ -60,7 +60,7 @@ const button = cva(["flex", "flex-row", "items-center", "rounded-xl"], {
 
 interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof button> {}
+  VariantProps<typeof button> { }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, size, children, className, ...props }, ref) => {
@@ -133,7 +133,7 @@ const UserButtonAndMenu = () => {
               variant="menu"
               size="small"
             >
-              <ArrowRightOnRectangleIcon className="mr-2 h-5 w-auto" /> Sign Out
+              <ArrowRightEndOnRectangleIcon className="mr-2 h-5 w-auto" /> Sign Out
             </Button>
           </DropdownMenu.Item>
         </DropdownMenu.Content>
